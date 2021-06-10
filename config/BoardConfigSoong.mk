@@ -35,6 +35,7 @@ SOONG_CONFIG_legionGlobalVars += \
     camera_needs_client_info_lib \
     has_legacy_camera_hal1 \
     camera_needs_client_info \
+    needs_camera_boottime \
     target_init_vendor_lib \
     target_inputdispatcher_skip_event_key \
     target_ld_shim_libs \
@@ -75,6 +76,7 @@ SOONG_CONFIG_legionQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_B
 SOONG_CONFIG_legionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_legionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_legionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
+SOONG_CONFIG_legionGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
