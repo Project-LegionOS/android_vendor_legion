@@ -32,6 +32,7 @@ SOONG_CONFIG_legionGlobalVars += \
     disable_bluetooth_le_read_buffer_size_v2 \
     disable_bluetooth_le_set_host_feature \
     gralloc_handle_has_reserved_size \
+    camera_needs_client_info_lib \
     has_legacy_camera_hal1 \
     camera_needs_client_info \
     target_init_vendor_lib \
@@ -90,6 +91,7 @@ SOONG_CONFIG_legionGlobalVars_target_inputdispatcher_skip_event_key := $(TARGET_
 SOONG_CONFIG_legionGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_legionGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 SOONG_CONFIG_legionGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
+SOONG_CONFIG_legionGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_legionQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
 else
