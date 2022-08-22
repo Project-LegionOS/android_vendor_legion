@@ -51,6 +51,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    ImmersiveNavigationOverlay
+
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
