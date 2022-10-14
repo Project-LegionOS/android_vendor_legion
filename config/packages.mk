@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     messaging \
     Seedvault \
     Stk \
-    ThemePicker
+    ThemePicker \
+    TouchGestures
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
