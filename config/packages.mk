@@ -28,6 +28,10 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     TouchGestures
 
+# Prebuilt packages
+PRODUCT_PACKAGES += \
+    ViaBrowser
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
