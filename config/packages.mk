@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
