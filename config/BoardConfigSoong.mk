@@ -42,7 +42,8 @@ SOONG_CONFIG_legionGlobalVars += \
     uses_egl_display_array \
     needs_oplus_tag \
     uses_oplus_camera\
-    uses_camera_parameter_lib
+    uses_camera_parameter_lib \
+    uses_nothing_camera
 
 SOONG_CONFIG_NAMESPACES += legionNvidiaVars
 SOONG_CONFIG_legionNvidiaVars += \
@@ -73,6 +74,7 @@ SOONG_CONFIG_legionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAME
 SOONG_CONFIG_legionQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_legionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_legionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
+SOONG_CONFIG_legionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
