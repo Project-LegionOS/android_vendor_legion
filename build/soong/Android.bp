@@ -299,6 +299,22 @@ needs_oplus_tag {
     soong_config_variables: {
         needs_oplus_tag: {
             cppflags: ["-DNEEDS_OPLUS_VENDOR_TAG"],
+	},
+    },
+}
+
+soong_config_module_type {
+    name: "uses_oplus_camera",
+    module_type: "cc_defaults",
+    config_namespace: "legionGlobalVars",
+    bool_variables: ["uses_oplus_camera"],
+    properties: ["cppflags"],
+}
+uses_oplus_camera {
+    name: "uses_oplus_camera_defaults",
+    soong_config_variables: {
+        uses_oplus_camera: {
+            cppflags: ["-DUSES_OPLUS_CAMERA"],
         },
     },
 }

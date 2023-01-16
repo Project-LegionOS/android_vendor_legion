@@ -37,7 +37,8 @@ SOONG_CONFIG_legionGlobalVars += \
     target_ld_shim_libs \
     target_surfaceflinger_udfps_lib \
     uses_egl_display_array \
-    needs_oplus_tag
+    needs_oplus_tag \
+    uses_oplus_camera
 
 SOONG_CONFIG_NAMESPACES += legionNvidiaVars
 SOONG_CONFIG_legionNvidiaVars += \
@@ -61,6 +62,7 @@ SOONG_CONFIG_legionQcomVars_supports_extended_compress_format := $(AUDIO_FEATURE
 SOONG_CONFIG_legionQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_legionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLAY_ARRAY)
 SOONG_CONFIG_legionGlobalVars_needs_oplus_tag := $(TARGET_NEEDS_OPLUS_VENDOR_TAG)
+SOONG_CONFIG_legionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
