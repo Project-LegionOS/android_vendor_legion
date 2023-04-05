@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2020 ArrowOS
+# Copyright (C) 2018-2020 LegionOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,31 +17,15 @@
 PRODUCT_PACKAGES += \
     BluetoothExt \
     SimpleCalendar \
-    DuckDuckGo \
     ExactCalculator \
     LatinIME \
+    Launcher3QuickStep \
     ParallelSpace \
     messaging \
     Seedvault \
-    SimpleGallery \
     Stk \
-    stats \
     ThemePicker \
     TouchGestures
-
-ifeq ($(PRODUCT_TYPE), go)
-PRODUCT_PACKAGES += \
-    ArrowLauncherGo
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    ArrowLauncherGo
-else
-PRODUCT_PACKAGES += \
-    ArrowLauncher
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    ArrowLauncher
-endif
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
@@ -64,11 +48,7 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay \
-    AndroidClearThemeOverlay \
-    AndroidVividThemeOverlay \
-    AndroidSnowPaintDropThemeOverlay \
-    AndroidEspressoThemeOverlay
+    AndroidBlackThemeOverlay
 
 # Extra tools
 PRODUCT_PACKAGES += \
