@@ -15,6 +15,7 @@
 
 # Required packages
 PRODUCT_PACKAGES += \
+    Aperture \
     BluetoothExt \
     SimpleCalendar \
     ExactCalculator \
@@ -24,8 +25,7 @@ PRODUCT_PACKAGES += \
     messaging \
     Seedvault \
     Stk \
-    ThemePicker \
-    TouchGestures
+    ThemePicker
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
