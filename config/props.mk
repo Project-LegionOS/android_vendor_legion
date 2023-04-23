@@ -79,7 +79,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Enable SystemUIDialog volume panel
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
-
-# GMS spoofing fingerprint
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.gms_fingerprint=google/angler/angler:6.0/MDB08L/2343525:user/release-keys
