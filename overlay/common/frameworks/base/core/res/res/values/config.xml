@@ -10,6 +10,14 @@
         <item>org.microg.nlp</item>
     </string-array>
 
+    <!-- When each intermediate UDFPS enroll stage ends, as a fraction of total progress. -->
+    <string-array name="config_udfps_enroll_stage_thresholds">
+        <item>0.065</item>
+        <item>0.48</item>
+        <item>0.584</item>
+        <item>0.792</item>
+    </string-array>
+
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
         <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
