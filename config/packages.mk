@@ -53,10 +53,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Navbar
-PRODUCT_PACKAGES += \
-    NavigationBarNoHintOverlay
-
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
