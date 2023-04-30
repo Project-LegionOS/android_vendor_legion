@@ -117,6 +117,7 @@ include vendor/legion/config/fonts.mk
 
 # Packages
 include vendor/legion/config/packages.mk
+include vendor/prebuilts/prebuilts.mk
 
 # Props
 include vendor/legion/config/props.mk
