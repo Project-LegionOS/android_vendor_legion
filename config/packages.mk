@@ -28,12 +28,6 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     TouchGestures
 
-# Prebuilt packages
-ifneq ($(LEGION_GAPPS), true)
-PRODUCT_PACKAGES += \
-    ViaBrowser
-endif
-
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
