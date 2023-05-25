@@ -14,6 +14,7 @@
 # limitations under the License.
 
 LEGION_MOD_VERSION = v5.0
+LEGION_ANDROID_VERSION = 13.0
 LEGION_BUILD_TYPE := UNOFFICIAL
 LEGION_BUILD_ZIP_TYPE := VANILLA
 
@@ -50,7 +51,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
   ro.legion.version=$(LEGION_VERSION) \
   ro.legion.releasetype=$(LEGION_BUILD_TYPE) \
   ro.legion.ziptype=$(LEGION_BUILD_ZIP_TYPE) \
-  ro.modversion=$(LEGION_MOD_VERSION)
+  ro.modversion=$(LEGION_MOD_VERSION) \
+  ro.android.version=$(LEGION_ANDROID_VERSION)
 
 LEGION_DISPLAY_VERSION := Legion-$(LEGION_MOD_VERSION)-$(LEGION_BUILD_TYPE)
 
