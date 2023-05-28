@@ -188,6 +188,23 @@ disable_bluetooth_le_read_buffer_size_v2 {
 }
 
 soong_config_module_type {
+    name: "camera_parameter_library",
+    module_type: "cc_defaults",
+    config_namespace: "legionGlobalVars",
+    value_variables: ["uses_camera_parameter_lib"],
+    properties: ["whole_static_libs"],
+}
+
+camera_parameter_library {
+    name: "camera_parameter_library_defaults",
+    soong_config_variables: {
+        uses_camera_parameter_lib: {
+            whole_static_libs: ["%s"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "disable_bluetooth_le_set_host_feature",
     module_type: "cc_defaults",
     config_namespace: "legionGlobalVars",
