@@ -54,8 +54,7 @@ SOONG_CONFIG_NAMESPACES += legionQcomVars
 SOONG_CONFIG_legionQcomVars += \
     supports_extended_compress_format \
     uses_pre_uplink_features_netmgrd \
-    uses_qti_camera_device \
-    needs_camera_boottime_timestamp
+    uses_qti_camera_device
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
@@ -72,7 +71,6 @@ SOONG_CONFIG_legionGlobalVars_uses_egl_display_array := $(TARGET_USES_EGL_DISPLA
 SOONG_CONFIG_legionGlobalVars_needs_oplus_tag := $(TARGET_NEEDS_OPLUS_VENDOR_TAG)
 SOONG_CONFIG_legionGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_legionGlobalVars_has_legacy_camera_hal1 := $(TARGET_HAS_LEGACY_CAMERA_HAL1)
-SOONG_CONFIG_legionQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_legionQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
 SOONG_CONFIG_legionGlobalVars_camera_needs_client_info := $(TARGET_CAMERA_NEEDS_CLIENT_INFO)
 SOONG_CONFIG_legionGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
