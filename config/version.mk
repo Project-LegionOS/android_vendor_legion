@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LEGION_MOD_VERSION = v5.0
+LEGION_MOD_VERSION = v5.01
 LEGION_ANDROID_VERSION = 13.0
 LEGION_BUILD_TYPE := UNOFFICIAL
 LEGION_BUILD_ZIP_TYPE := VANILLA
